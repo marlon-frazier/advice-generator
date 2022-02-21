@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+--Light-Cyan: hsl(193, 38%, 86%);
+--Neon-Green: hsl(150, 100%, 66%);
+--Grayish-Blue: hsl(217, 19%, 38%);
+--Dark-Grayish-Blue: hsl(217, 19%, 24%);
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6em;
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--Dark-Grayish-Blue);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+h4{
+    color: var(--Neon-Green);
+    margin-bottom: 1.5em;
+}
+
+.card{
+    position: relative;
+    width: 30em;
+    background-color: var(--Grayish-Blue);
+    padding: 2em;
+    text-align: center;
+    border-radius: 1em;
+}
+
+.divider{
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
+}
+
+.divider img{
+    position: relative;
+}
+
+.lines{
+    height: 4.5px;
+    position: relative;
+}
+
+.lines::before,
+.lines::after{
+    content: '';
+    position: absolute;
+    margin: auto;
+    height: .2em;
+    background: var(--Light-Cyan);
+    width: 45%;
+    top: 45%;
+}
+
+.lines::before{
+    top: .4em;
+    right: 0;
+}
+
+.lines::after{
+    top: .4em;
+    left: 0;
+}
+
+.dice{
+    position: absolute;
+    bottom: -2em;
+    left: 45%;
+    padding: 1em;
+    border-radius: 50%;
+    background-color: var(--Neon-Green);
+}
+
+.dice:hover{
+    background-color:hsl(150, 100%, 80%);
+}
+
+
+
+p{
+    font-size: 2.4em;
+    color: var(--Light-Cyan);
+}
+
+#random:hover{
+    cursor: pointer;
+}
