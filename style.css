@@ -88,6 +88,7 @@ h4{
 
 .dice:hover{
     background-color:hsl(150, 100%, 80%);
+    box-shadow: 0 0 5em 1em hsl(150, 100%, 80%);
 }
 
 
